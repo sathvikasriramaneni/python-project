@@ -9,3 +9,7 @@ while(count <= 20):
   a = b
   b = sum
   sum = a + b
+ 
+ 
+ #program to print positive numbers in a range
+ 
