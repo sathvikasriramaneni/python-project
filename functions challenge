@@ -1,0 +1,16 @@
+def most_frequent(str1):
+    val={}
+    i=1
+    for char in str1:
+        if char in val:
+            dv=val.get(char)
+            d1={char: dv+1}
+            val.update(d1)
+        else:
+            dx={char: i}
+            val.update({char: i})
+    sort_orders=sorted(val.items(), key=lambda x: x[1], reverse=True)
+    for i in sort_orders:
+        print(str(i[0]) + ' = ' + str(i[1]))
+most_frequent("mississippi")
+
